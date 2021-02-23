@@ -54,10 +54,8 @@ https://github.com/experiencor/keras-yolo3/blob/master/yolo3_one_file_to_detect_
 
 ```sh
 git clone https://github.com/chinmaykumar06/face-detection-yolov3-keras.git
-face-detection-yolov3-kera
+cd face-detection-yolov3-keras
 ```
-
-In Windows: After you have cloned the repository in the same folder open the Command Prompt or else the Anaconda Prompt, for Command Promt run activate to activate your base environment.
 
 **Create** my_project_env.  Running this command will create a new `conda` environment named my_project_env.
 ```
