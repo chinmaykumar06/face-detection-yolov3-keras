@@ -107,7 +107,7 @@ conda activate my_project_env
 
 >**building the model**
 ```bash
-$ python yoloface.py 
+$ python yolov3.py 
 ```
 Upon running this command a model.h5 file should appear in your working directory which is the keras model-architecture with the pre trained weights that were downloaded
 
