@@ -40,7 +40,7 @@ https://github.com/experiencor/keras-yolo3/blob/master/yolo3_one_file_to_detect_
 * Matplotlib
 * Pillow
 
-### I. Steps to run this model using [miniconda](https://conda.io/en/latest/):
+### I. Setting up [miniconda](https://conda.io/en/latest/):
 
 **Install** [miniconda](http://conda.pydata.org/miniconda.html) on your machine. Detailed instructions:
 
@@ -53,8 +53,8 @@ https://github.com/experiencor/keras-yolo3/blob/master/yolo3_one_file_to_detect_
 (You will require Git for this)
 
 ```sh
-git clone https://github.com/chinmaykumar06/cats-vs-dogs-classifier.git
-cd cats-vs-dogs-classifier
+git clone https://github.com/chinmaykumar06/face-detection-yolov3-keras.git
+face-detection-yolov3-kera
 ```
 
 In Windows: After you have cloned the repository in the same folder open the Command Prompt or else the Anaconda Prompt, for Command Promt run activate to activate your base environment.
@@ -99,17 +99,9 @@ conda remove --name my_project_env --all
 conda activate my_project_env
 `````
 
-**Open** jupyter notebook.  Running this command will open jupyter notebook.
-
-```
-jupyter notebook
-````
-
-**Open the CatsVsDogs.ipynb** and make sure you choose the right environment where you installed your libraries and then start executing the cells!
-
 To exit the environment when you have completed your work session, simply close the terminal window.
 
-### II. Using Google Colab
+### II. Setting up Google Colab
 The repository consists of the jupyter notebooks of the code as well they can be easily implmented in colasb or even on your local machine, the steps to run it on colab are given below:
 1. Open https://colab.research.google.com, click **Sign in** in the upper right corner, use your Google credentials to sign in.
 2. Click **GITHUB** tab, paste https://github.com/chinmaykumar06/face-detection-yolov3-keras.git and press Enter
