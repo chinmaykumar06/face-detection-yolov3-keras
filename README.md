@@ -34,7 +34,6 @@ https://github.com/experiencor/keras-yolo3/blob/master/yolo3_one_file_to_detect_
 
 * Tensorflow
 * opencv-python
-* opencv-contrib-python
 * Numpy
 * Keras
 * Matplotlib
