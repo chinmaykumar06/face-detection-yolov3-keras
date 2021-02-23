@@ -119,8 +119,8 @@ The repository consists of the jupyter notebooks of the code as well they can be
 6. Now mount your drive and using cd change your path to the cloned repository.
 7. Run all the code blocks and at the end you will finish building the model with the pretrained weights and a model.h5 file will be saved to your cloned repo.
 8. Now open the **face-detection.ipynb** file as another colab noteboook. Make sure the drive is mounted and your path is set to the cloned repository.
-9. Noe run the cells of the notebook one by one. However you will not get the output then and there since in colab cv2.imshow doesn't work hence you can later read those files using matplotlib and see the output or directly see it in the outputs/ folder where the outputs are svaed.
-10. The images for which the prediction has to be performed needs to be added to the samples/ folder and accordingly the filename needs to be changed in the codeblocks.
+9. Now run the cells of the notebook one by one. However you will not get the output then and there since in colab cv2.imshow doesn't work hence you can later read those files using matplotlib and see the output or directly see it in the outputs/ folder where the outputs are svaed.
+10. The images for which the face detection has to be performed needs to be added to the samples/ folder and accordingly the filename needs to be changed in the codeblocks.
 
 ## Sample outputs
 
