@@ -2,7 +2,7 @@
 
 ## Overview of the project
 
-![img](https://github.com/chinmaykumar06/face-detection-yolov3-keras/blob/main/outputs/outside_yolov3.jpg)
+<img src="https://github.com/chinmaykumar06/face-detection-yolov3-keras/blob/main/outputs/outside_yolov3.jpg" width="1200">
 
 The YOLOv3 (You Only Look Once) is a state-of-the-art, real-time object detection algorithm. The published model recognizes 80 different objects in images and videos. For more details, you can refer to this [paper](https://pjreddie.com/media/files/papers/YOLOv3.pdf).
 The official [DarkNet GitHub](https://github.com/pjreddie/darknet) repository contains the source code for the YOLO versions mentioned in the papers, written in C. The repository provides a step-by-step tutorial on how to use the code for object detection.
