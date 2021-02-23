@@ -21,12 +21,23 @@ The basic steps follwed were
 
 Credit: [Ayoosh Kathuria](https://towardsdatascience.com/yolo-v3-object-detection-53fb7d3bfe6b)
 
-https://github.com/experiencor/keras-yolo3/blob/master/yolo3_one_file_to_detect_them_all.py
-
 
 ## Model Design and Implementation
+The problem statement here was to detect faces in a given image and then apply blurring to the background keeping the foreground i.e. the detected faces intact. For this purpose the yolov3 alogirthm was used.
+A keras model akin to the darknet architecture of the yolov3 was written and then the weights were loaded into the model form a pretrained weights file.
+However the YOLO v3 is trained on 80 different classes whereas here I need only single class detetcion. To customize the object detetction the number of filters need to be changed at the yolo output layers which are the layer 82, 94 and 106. For these layers the number of filters in the darknet architecture is 255. This figure comes from 3*(5+80) since the YOLO v3 network aims to predict bounding boxes (region of interest of the candidate object) of each object along with the probability of the class which the object belongs to. For this, the model divides every input image into an SxS grid of cells and each grid predicts B bounding boxes and C class probabilities of the objects whose centers fall inside the grid cells. The paper states that each bounding box may specialize in detecting a certain kind of object.
+Bounding boxes “B” is associated with the number of anchors being used. Each bounding box has 5+C attributes, where ‘5’ refers to the five bounding box attributes (eg: center coordinates(bx, by), height(bh), width(bw), and confidence score) and C is the number of classes. 
+The output from passing this image into a forward pass convolution network is a 3-D tensor because we are working on an SxS image. The output looks like [S, S, B*(5+C)].
 
+![img](https://github.com/chinmaykumar06/face-detection-yolov3-keras/blob/main/yolo-anchor.png)
 
+Credit: [Manogna Mantripragada](https://towardsdatascience.com/digging-deep-into-yolo-v3-a-hands-on-guide-part-1-78681f2c7e29)
+
+As we can see for conventional YOLO v3 model the number of filters will be 85 for the yolo output, but since I have only 1 class hence the number of filters for the layer 82, 94 and 106 needs to changed to 3*(5+1) which is 18!
+
+These weights were trained using the DarkNet code base on the WIDER FACE dataset. To load these weights from the weights file into the defined keras model a WeightReader class was used which is taken from [here](https://github.com/experiencor/keras-yolo3/blob/master/yolo3_one_file_to_detect_them_all.py). After the weights are loaded into the model the final .h5 model is saved which will be further used for face detection. The code for saving and loading the model can be found in [yolov3.py](https://github.com/chinmaykumar06/face-detection-yolov3-keras/blob/main/yolov3.py).
+
+After the model is saved we pass the input image after resizing it to (416,416) to the model along with the anchor box sizes to be used at the three yolo output layers. The input image size and achor box size has been taken from the official yolov3 paper. The model returns the anchor boxes predicted for the image, the redundant boxes are removes using Non Maximal Suppression and then the final predicted boxes are adjusted as per the image size. These objectness score are then thersholded at 60%. The finaly obtained boxes which is the precited faces is plotted on the input image and displayed. After this using a Gaussian blur the rest of the image apart from the predicted regions is blurred keeping the detected faces intact. 
 
 ## Implement this project
 
