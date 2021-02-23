@@ -105,8 +105,9 @@ Upon running this command a model.h5 file should appear in your working director
 
 >**image input**
 ```bash
-$ python yoloface.py --image samples/test.jpg --output-dir outputs/
+$ python face-detection.py --image samples/test.jpg --output-dir outputs/
 ```
+(for testing the model against your input add the images to the samples/ folder and run the command with the respective input name)
 
 To exit the environment when you have completed your work session, simply close the terminal window.
 
@@ -127,6 +128,6 @@ The repository consists of the jupyter notebooks of the code as well they can be
 5. Go to the directory and open yolov3.ipynb using Colab.
 6. Now mount your drive and using cd change your path to the cloned repository.
 7. Run all the code blocks and at the end you will finish building the model with the pretrained weights and a model.h5 file will be saved to your cloned repo.
-8. Now open the face-detection.py file as another colab noteboook. Make sure the drive is mounted and your path is set to the cloned repository.
+8. Now open the face-detection.ipynb file as another colab noteboook. Make sure the drive is mounted and your path is set to the cloned repository.
 9. Noe run the cells of the notebook one by one. However you will not get the output then and there since in colab cv2.imshow doesn't work hence you can later read those files using matplotlib and see the output or directly see it in the outputs/ folder where the outputs are svaed.
 10. The images for which the prediction has to be performed needs to be added to the samples/ folder and accordingly the filename needs to be changed in the codeblocks.
