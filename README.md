@@ -49,11 +49,12 @@ https://github.com/experiencor/keras-yolo3/blob/master/yolo3_one_file_to_detect_
 - **Windows:** http://conda.pydata.org/docs/install/quick.html#windows-miniconda-install
 
 **Clone** the repository. 
-
-(You will require Git for this)
-
 ```sh
 git clone https://github.com/chinmaykumar06/face-detection-yolov3-keras.git
+```
+
+**Move into the cloned repository**
+```
 cd face-detection-yolov3-keras
 ```
 
@@ -79,7 +80,6 @@ conda clean -tp
 ```
 
 **Uninstalling**
-
 To uninstall the environment:
 ```sh
 conda remove --name my_project_env --all
