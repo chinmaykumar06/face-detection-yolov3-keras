@@ -95,3 +95,20 @@ conda activate my_project_env
 `````
 
 To exit the environment when you have completed your work session, simply close the terminal window.
+
+
+## Usage
+
+* Clone this repository
+```bash
+$ git clone git clone https://github.com/chinmaykumar06/face-detection-yolov3-keras.git
+```
+
+* For face detection, you should download the pre-trained YOLOv3 weights file which trained on the [WIDER FACE: A Face Detection Benchmark](http://mmlab.ie.cuhk.edu.hk/projects/WIDERFace/index.html) dataset from this [link](https://drive.google.com/file/d/1xYasjU52whXMLT5MtF7RCPQkV66993oR/view?usp=sharing) and place it in the `model-weights/` directory.
+
+* Run the following command:
+
+>**image input**
+```bash
+$ python yoloface.py --image samples/outside_000001.jpg --output-dir outputs/
+```
