@@ -1,6 +1,6 @@
 # face-detection-yolov3-keras
 
-A detailed explanation of the project can be view over [here](https://youtu.be/CSpphzDtpuw).
+A detailed explanation of the project can be viewed over [here](https://youtu.be/CSpphzDtpuw).
 
 ## Overview of the project
 
