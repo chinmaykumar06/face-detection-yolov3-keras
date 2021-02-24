@@ -1,5 +1,7 @@
 # face-detection-yolov3-keras
 
+A detailed explanation of the project can be view over [here](https://youtu.be/CSpphzDtpuw).
+
 ## Overview of the project
 
 <img src="https://github.com/chinmaykumar06/face-detection-yolov3-keras/blob/main/outputs/outside_yolov3.jpg" width="800">
