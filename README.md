@@ -120,7 +120,7 @@ $ python face-detection.py --image samples/test.jpg --output-dir outputs/
 To exit the environment when you have completed your work session, simply close the terminal window.
 
 ### II. Setting up Google Colab
-The repository consists of the jupyter notebooks of the code as well they can be easily implmented in colasb or even on your local machine, the steps to run it on colab are given below:
+The repository consists of the jupyter notebooks of the code as well they can be easily implmented in colab or even on your local machine, the steps to run it on colab are given below:
 1. Open https://colab.research.google.com, click **Sign in** in the upper right corner, use your Google credentials to sign in.
 2. Click **GITHUB** tab, paste https://github.com/chinmaykumar06/face-detection-yolov3-keras.git and press Enter
 3. This repository will get cloned in your Drive in the folder Colab Notebooks
